@@ -362,7 +362,7 @@ function About() {
             </p>
 
             <div className="cta-buttons">
-              <a href="../pages/Partner" className="primary-btn">
+              <a href="../pages/PartnerWithUs" className="primary-btn">
                 Partner With Us
               </a>
               <a href="/projects" className="secondary-btn">
