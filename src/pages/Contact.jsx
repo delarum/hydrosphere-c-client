@@ -47,14 +47,9 @@ function Contact() {
 
         {/* Hero */}
         <section className="contact-hero">
-          <div className="contact-hero-badge">HYDROS-C COMMUNICATION HUB</div>
+          <div className="contact-hero-badge">HYDROS-C CONTACT HUB</div>
           <h1>Let's Build Cleaner Water Systems Together</h1>
-          <p>
-            Whether you're a partner, researcher, donor, environmental agency,
-            or simply someone passionate about water restoration — we’d love to
-            hear from you.
-          </p>
-        </section>
+         </section>
 
         {/* Main Contact Section */}
         <section className="contact-main">
