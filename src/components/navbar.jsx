@@ -24,7 +24,7 @@ const Navbar = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Projects', path: '/projects' },
     { name: 'Weather', path: '/weather' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Contact', path: '/Contact' },
   ];
 
   const isActive = (path) => {
