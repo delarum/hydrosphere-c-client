@@ -1,9 +1,9 @@
 .wave-bg {
-            background: linear-gradient(135deg, #b8e6e6 0%, #e0f7f7 100%);
+            background: linear-gradient(135deg, #a1c4c9 0%, #d2e3e6 100%);
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #1e3a5f 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #1c555c 0%, #3e7a82 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -19,7 +19,7 @@
         }
 
         .timeline-line {
-            background: linear-gradient(to bottom, #3b82f6, #1e3a5f);
+            background: linear-gradient(to bottom, #297376, #013137);
         }
 
         .pulse-ring {
@@ -60,7 +60,7 @@
         }
         .about-page {
   background: #f9fafb;
-  color: #1f2937;
+  color: #013137;
   overflow-x: hidden;
 }
 
@@ -73,7 +73,7 @@
   position: relative;
   overflow: hidden;
   padding: 140px 20px 80px;
-  background: linear-gradient(135deg, #f0f9ff, #e0f2fe, #f8fafc);
+  background: linear-gradient(135deg, #f0f6f7, #d2e3e6, #f0f6f7);
 }
 
 .wave-overlay {
@@ -102,7 +102,7 @@
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-radius: 999px;
-  color: #1e3a5f;
+  color: #013137;
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -111,13 +111,13 @@
 
 .about-hero h1 {
   font-size: clamp(2.8rem, 6vw, 5rem);
-  color: #1e3a5f;
+  color: #013137;
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
 .about-hero h1 span {
-  background: linear-gradient(to right, #1e3a5f, #3b82f6);
+  background: linear-gradient(to right, #013137, #5c9396);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -152,7 +152,7 @@
 
 .section-center h2 {
   font-size: 2.5rem;
-  color: #1e3a5f;
+  color: #013137;
   margin-bottom: 10px;
 }
 
@@ -170,7 +170,7 @@
 }
 
 .section-label {
-  color: #3b82f6;
+  color: #0145f2;
   font-weight: 700;
   margin-bottom: 16px;
   letter-spacing: 1px;
@@ -178,7 +178,7 @@
 
 .mission-text h2 {
   font-size: 2.5rem;
-  color: #1e3a5f;
+  color: #013137;
   margin-bottom: 20px;
 }
 
@@ -193,18 +193,18 @@
   gap: 15px;
   margin-top: 30px;
   padding: 20px;
-  background: #eff6ff;
-  border-left: 5px solid #3b82f6;
+  background: #d2e3e6;
+  border-left: 5px solid #ce5612;
   border-radius: 14px;
 }
 
 .quote-icon {
   font-size: 2rem;
-  color: #3b82f6;
+  color: #ce5612;
 }
 
 .quote-box p {
-  color: #1e3a5f;
+  color: black;
   font-style: italic;
   font-weight: 500;
 }
@@ -217,7 +217,7 @@
   content: "";
   position: absolute;
   inset: -12px;
-  background: linear-gradient(to right, #b8e6e6, #dbeafe);
+  background: linear-gradient(to right, #297376, #e4f4f8);
   border-radius: 28px;
   transform: rotate(3deg);
   opacity: 0.5;
@@ -247,7 +247,7 @@
 .counter {
   font-size: 2rem;
   font-weight: 800;
-  color: #1e3a5f;
+  color: #013137;
 }
 
 .stat-box p {
@@ -274,7 +274,7 @@
   top: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(to bottom, #3b82f6, #1e3a5f);
+  background: linear-gradient(to bottom, #f7aa29, #ce5612);
   transform: translateX(-50%);
   border-radius: 10px;
 }
@@ -309,13 +309,13 @@
 }
 
 .timeline-card .year {
-  color: #3b82f6;
+  color: #ce5612;
   font-weight: 800;
   font-size: 1.1rem;
 }
 
 .timeline-card h3 {
-  color: #1e3a5f;
+  color: #013137;
   margin: 10px 0;
 }
 
@@ -325,7 +325,7 @@
 }
 
 .active-card {
-  background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+  background: linear-gradient(135deg, #013137, #215e68);
   color: white;
 }
 
@@ -365,7 +365,7 @@
 .value-icon {
   width: 65px;
   height: 65px;
-  background: #3b82f6;
+  background:#87e990;
   color: white;
   font-size: 1.8rem;
   display: flex;
@@ -376,7 +376,7 @@
 }
 
 .value-card h3 {
-  color: #1e3a5f;
+  color: #013137;
   margin-bottom: 14px;
 }
 
@@ -388,7 +388,7 @@
 /* ================= FLAGSHIP ================= */
 .flagship-section {
   padding: 100px 0;
-  background: #1e3a5f;
+  background: #013137;
   color: white;
   position: relative;
   overflow: hidden;
@@ -438,7 +438,7 @@
 }
 
 .flagship-text p {
-  color: #dbeafe;
+  color: #fff;
   line-height: 1.9;
   margin-bottom: 20px;
 }
@@ -460,11 +460,11 @@
 
 .mini-box h3 {
   font-size: 2rem;
-  color: #bfdbfe;
+  color: #c1d9de;
 }
 
 .mini-box p {
-  color: #dbeafe;
+  color: white;
   margin: 0;
 }
 
@@ -539,12 +539,12 @@
 }
 
 .team-card h3 {
-  color: #1e3a5f;
+  color: black;
   margin-bottom: 8px;
 }
 
 .team-card h4 {
-  color: #3b82f6;
+  color: #5c9396;
   margin-bottom: 14px;
 }
 
@@ -564,7 +564,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #6b7280;
+  color: #297376;
   margin-bottom: 40px;
 }
 
@@ -575,14 +575,14 @@
   gap: 40px;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1e3a5f;
+  color: #013137;
   opacity: 0.75;
 }
 
 /* ================= CTA ================= */
 .about-cta-section {
   padding: 100px 0;
-  background: linear-gradient(to right, #1e3a5f, #2d5a87);
+  background: linear-gradient(to right, #013137, #297376);
   color: white;
   text-align: center;
 }

@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
-import "../assets/about.css";
+import "../styles/about.css";
 
-import leader1 from "../../public/images/leader2.jpg";
-import leader2 from "../../public/images/leader3.jpg";
-import leader3 from "../../public/images/man1.jpg";
+import leader1 from "../assets/leader2.jpg";
+import leader2 from "../assets/leader3.jpg";
+import leader3 from "../assets/man1.jpg";
 
 function About() {
   useEffect(() => {
