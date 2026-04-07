@@ -92,7 +92,7 @@
 
 .hero-subtitle {
   font-size: 1.25rem;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 2.5rem;
   line-height: 1.7;
   max-width: 600px;

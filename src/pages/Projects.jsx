@@ -75,7 +75,7 @@ function Projects() {
           Partner with us to expand intelligent ecological monitoring across
           Africa's vital water systems.
         </p>
-        <button className="cta-button">Partner With Us</button>
+        <a href="/PartnerWithUs" target="_blank" rel="noopener noreferrer" className="cta-button">Partner With Us</a>
       </section>
 
       <ImpactStats />

@@ -437,6 +437,7 @@ body {
 
 .cta-button {
   padding: 14px 28px;
+  text-decoration: none;
   border: none;
   border-radius: 999px;
   background: linear-gradient(135deg, rgb(255, 221, 255), #fceea8);
