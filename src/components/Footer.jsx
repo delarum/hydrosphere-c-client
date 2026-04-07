@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import waveLogo from '../assets/waveLogo.png';
+import '../styles/footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
