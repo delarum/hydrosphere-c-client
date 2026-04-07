@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import '../styles/partner.css';
 
 const PartnerWithUs = () => {
   const [formData, setFormData] = useState({
