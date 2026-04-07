@@ -8,7 +8,7 @@ const waterBodies = [
     image: "src/assets/LakeVictoria.webp",
     badge: "🌍 58.4% Polluted",
     description:
-      "Africa’s largest freshwater lake now faces severe eutrophication, agricultural runoff and urban waste. Our AI-powered monitoring tracks algae blooms and illegal waste.",
+      "Africa's largest freshwater lake now faces severe eutrophication, agricultural runoff and urban waste. Our AI-powered monitoring tracks algae blooms and illegal waste.",
     stats: [
       { label: "Nutrient Levels", value: "68" },
       { label: "Pollution Reports", value: "42" },
@@ -40,7 +40,7 @@ const waterBodies = [
     image: "src/assets/CongoRiver.jpg",
     badge: "🛰️ 4.7M AI Scans",
     description:
-      "The mighty Congo River remains one of Africa’s ecological lifelines. Illegal dumping and runoff threaten both fisheries and surrounding communities.",
+      "The mighty Congo River remains one of Africa's ecological lifelines. Illegal dumping and runoff threaten both fisheries and surrounding communities.",
     stats: [
       { label: "Water Health Alerts", value: "15" },
       { label: "Area Covered", value: "4,700" },
@@ -56,7 +56,7 @@ const waterBodies = [
     image: "src/assets/LakeChad.jpg",
     badge: "🌊 Climate Critical",
     description:
-      "Once one of Africa’s largest lakes, Lake Chad is shrinking under climate stress, water extraction and drought, creating severe pressure for local systems.",
+      "Once one of Africa's largest lakes, Lake Chad is shrinking under climate stress, water extraction and drought, creating severe pressure for local systems.",
     stats: [
       { label: "Nations", value: "4" },
       { label: "Threat Zones", value: "90" },
@@ -104,7 +104,7 @@ const waterBodies = [
     image: "src/assets/ZambeziRiver.png",
     badge: "📡 Heavy AI Monitoring",
     description:
-      "Hydropower stress, waste inflows and industrial runoff have created pressure on the basin’s health and long-term resilience.",
+      "Hydropower stress, waste inflows and industrial runoff have created pressure on the basin's health and long-term resilience.",
     stats: [
       { label: "AI Monitoring Sites", value: "2,574" },
       { label: "Warning Zones", value: "32" },
