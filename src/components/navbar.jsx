@@ -25,10 +25,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/About' },
-    { name: 'Projects', path: '/Projects' },
+    { name: 'About Us', path: '/about' },
+    { name: 'Projects', path: '/projects' },
     { name: 'Weather', path: '/weather' },
-    { name: 'Contact', path: '/Contact' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   const isActive = (path) => {
@@ -60,7 +60,7 @@ const Navbar = () => {
             </li>
           ))}
           <li className="nav-item">
-            <Link to="/involved" className="nav-button">
+            <Link to="/become-involved" className="nav-button">
               Become Involved
             </Link>
           </li>
@@ -95,7 +95,7 @@ const Navbar = () => {
           ))}
           <li className="mobile-nav-item">
             <Link 
-              to="/involved" 
+              to="/become-involved" 
               className="mobile-nav-button"
               onClick={() => setIsOpen(false)}
             >

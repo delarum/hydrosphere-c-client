@@ -49,8 +49,12 @@ export const AuthProvider = ({ children }) => {
       setIsAuthenticated(true);
       return { success: true };
     } catch (error) {
-      return { success: false, message: error.response?.data?.message || 'Registration failed' };
-    }
+  return {
+    success: false,
+    message: error.response?.data?.message || 'Registration failed',
+    errors: error.response?.data?.errors || null
+  };
+}
   };
 
   const login = async (email, password) => {
@@ -66,17 +70,9 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const googleLogin = async (token) => {
-    localStorage.setItem('token', token);
-    try {
-      const { data } = await api.get('/auth/me');
-      setUser(data.user);
-      setIsAuthenticated(true);
-      return { success: true };
-    } catch (error) {
-      return { success: false };
-    }
-  };
+  const googleLogin = async () => {
+  window.location.href = `${API_URL.replace('/api', '')}/api/auth/google`;
+};
 
   const logout = () => {
     localStorage.removeItem('token');

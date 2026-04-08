@@ -7,6 +7,7 @@ import ReportIncident from '../components/BecomeInvolved/ReportIncident';
 import InnovationLab from '../components/BecomeInvolved/InnovationLab';
 import MyRewards from '../components/BecomeInvolved/MyRewards';
 import '../styles/become-involved.css';
+import '../styles/auth.css';
 
 const BecomeInvolved = () => {
   const [activeTab, setActiveTab] = useState('report');

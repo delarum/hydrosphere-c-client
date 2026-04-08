@@ -1,13 +1,10 @@
-// client/src/pages/Register.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { GoogleLogin } from '@react-oauth/google';
-import { jwtDecode } from 'jwt-decode';
 
 const Register = () => {
   const navigate = useNavigate();
-  const { register, googleLogin } = useAuth();
+  const { register } = useAuth();
   
   const [formData, setFormData] = useState({
     firstName: '',
@@ -69,7 +66,7 @@ const Register = () => {
       ...prev,
       [name]: value
     }));
-    // Clear error when user types
+
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
@@ -87,13 +84,13 @@ const Register = () => {
       lastName: formData.lastName,
       email: formData.email,
       password: formData.password,
-      age: parseInt(formData.age)
+      age: Number(formData.age)
     });
     
     setIsLoading(false);
     
     if (result.success) {
-      navigate('/dashboard', { replace: true });
+      navigate('/become-involved', { replace: true });
     } else {
       if (result.errors) {
         const serverErrors = {};
@@ -104,26 +101,6 @@ const Register = () => {
       } else {
         setErrors({ general: result.message });
       }
-    }
-  };
-
-  const handleGoogleSuccess = async (credentialResponse) => {
-    try {
-      const decoded = jwtDecode(credentialResponse.credential);
-      
-      // For Google users, we need to handle age verification differently
-      // You might want to redirect to a page to collect age first
-      // For now, we'll assume backend handles this or prompt for age
-      
-      const result = await googleLogin(credentialResponse.credential);
-      
-      if (result.success) {
-        navigate('/dashboard', { replace: true });
-      } else {
-        setErrors({ general: result.message });
-      }
-    } catch (error) {
-      setErrors({ general: 'Google login failed. Please try again.' });
     }
   };
 
@@ -238,7 +215,6 @@ const Register = () => {
               </div>
               {errors.password && <span className="error-text">{errors.password}</span>}
               
-              {/* Password strength indicator */}
               <div className="password-strength">
                 <div className={`strength-bar ${formData.password.length >= 8 ? 'active' : ''}`}></div>
                 <div className={`strength-bar ${/(?=.*[A-Z])/.test(formData.password) ? 'active' : ''}`}></div>
@@ -278,14 +254,16 @@ const Register = () => {
           </div>
 
           <div className="social-login">
-            <GoogleLogin
-              onSuccess={handleGoogleSuccess}
-              onError={() => setErrors({ general: 'Google login failed' })}
-              theme="filled_blue"
-              size="large"
-              width="100%"
-              text="signup_with"
-            />
+            <button
+              type="button"
+              className="google-signin-btn"
+              onClick={() => {
+                window.location.href = `${import.meta.env.VITE_API_URL}/api/auth/google`;
+              }}
+            >
+              <span className="google-icon">G</span>
+              Sign up with Google
+            </button>
           </div>
 
           <div className="auth-footer">
