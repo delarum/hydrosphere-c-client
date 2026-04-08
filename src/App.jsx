@@ -6,6 +6,7 @@ import PartnerWithUs from './pages/PartnerWithUs';
 import Projects from './pages/Projects';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import BecomeInvolved from './pages/BecomeInvolved';
 
 import { Routes, Route } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
@@ -23,6 +24,13 @@ function App() {
     <Route path="/about" element={<About />} />
     <Route path="/PartnerWithUs" element={<PartnerWithUs />} />
     <Route path="/Projects" element={<Projects />} />
+    <Route path="/login" element={<Login />} />
+    <Route path="/register" element={<Register />} />
+    <Route path="/become-involved" element={
+      <ProtectedRoute>
+        <BecomeInvolved />
+      </ProtectedRoute>
+    } />
 
     </Routes>
     </AuthProvider>
