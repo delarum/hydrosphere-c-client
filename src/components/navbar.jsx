@@ -2,11 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import waveLogo from '../assets/waveLogo.png';
 import '../styles/navbar.css';
+import { useAuth } from '../context/AuthContext';
+import UserProfileHeader from './UserProfileHeader';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {

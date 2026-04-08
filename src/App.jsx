@@ -4,18 +4,29 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import PartnerWithUs from './pages/PartnerWithUs';
 import Projects from './pages/Projects';
-import { Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
+import { Routes, Route } from 'react-router-dom';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { AuthProvider } from './context/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute';
+
+const GOOGLE_CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID || 'your-google-client-id';
 function App() {
   return (
-    <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/contact" element={<Contact />} />
+    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
     <Route path="/about" element={<About />} />
     <Route path="/PartnerWithUs" element={<PartnerWithUs />} />
     <Route path="/Projects" element={<Projects />} />
 
     </Routes>
+    </AuthProvider>
+    </GoogleOAuthProvider>
   );
 }
 
