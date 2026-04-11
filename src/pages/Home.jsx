@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import '../styles/footer.css';
 import MapSection from '../components/MapSection';
 import '../styles/home.css';
+import { Link } from 'react-router-dom';
+import Shop from './Shop';
 
 function Home() {
   return (
@@ -94,6 +96,125 @@ function Home() {
           {/* More cards... */}
         </div>
       </section>
+
+       <section className="garbage-shop-section">
+      
+            {/* Floating background items */}
+            <div className="shop-float-bg">
+              <span className="shop-float-item">🧴</span>
+              <span className="shop-float-item">👕</span>
+              <span className="shop-float-item">🪑</span>
+              <span className="shop-float-item">👜</span>
+              <span className="shop-float-item">♻️</span>
+            </div>
+      
+            <div className="garbage-shop-container">
+      
+              {/* ── Content Side ── */}
+              <div className="shop-content">
+                <span className="shop-badge">
+                  <span>🌊</span>
+                  Ocean Plastic Recovery
+                </span>
+      
+                <h2>
+                  Turn Trash Into <span>Treasure</span>
+                </h2>
+      
+                <p className="shop-description">
+                  Shop premium products made from 100% recycled ocean plastic. Every purchase
+                  directly funds the removal of plastic waste from Africa's coastlines and
+                  supports local recycling communities.
+                </p>
+      
+                {/* Impact Stats */}
+                <div className="shop-impact-preview">
+                  <div className="impact-stat">
+                    <div className="impact-icon">🧴</div>
+                    <div className="impact-info">
+                      <span className="impact-number">24.7K</span>
+                      <span className="impact-label">kg removed</span>
+                    </div>
+                  </div>
+                  <div className="impact-stat">
+                    <div className="impact-icon">♻️</div>
+                    <div className="impact-info">
+                      <span className="impact-number">156K</span>
+                      <span className="impact-label">items recycled</span>
+                    </div>
+                  </div>
+                  <div className="impact-stat">
+                    <div className="impact-icon">💧</div>
+                    <div className="impact-info">
+                      <span className="impact-number">2.1M</span>
+                      <span className="impact-label">liters saved</span>
+                    </div>
+                  </div>
+                </div>
+      
+                <Link to="/shop" className="shop-cta-btn">
+                  Explore EcoShop
+                  <span className="arrow">→</span>
+                </Link>
+              </div>
+      
+              {/* ── Visual Side ── */}
+              <div className="shop-visual">
+                <div className="shop-card-large">
+      
+                  {/* Rotating recycle centre with orbiting products */}
+                  <div className="recycle-center">
+                    <div className="recycle-symbol-large">♻️</div>
+                    <div className="orbit-products">
+                      <div className="orbit-product">🧴</div>
+                      <div className="orbit-product">👕</div>
+                      <div className="orbit-product">🪑</div>
+                      <div className="orbit-product">👜</div>
+                    </div>
+                  </div>
+      
+                  {/* Product category grid */}
+                  <div className="product-preview-grid">
+                    <div className="preview-item">
+                      <span className="icon">👕</span>
+                      <span className="label">Apparel</span>
+                    </div>
+                    <div className="preview-item">
+                      <span className="icon">🏠</span>
+                      <span className="label">Home</span>
+                    </div>
+                    <div className="preview-item">
+                      <span className="icon">💻</span>
+                      <span className="label">Tech</span>
+                    </div>
+                    <div className="preview-item">
+                      <span className="icon">🎨</span>
+                      <span className="label">Art</span>
+                    </div>
+                    <div className="preview-item">
+                      <span className="icon">🪴</span>
+                      <span className="label">Garden</span>
+                    </div>
+                    <div className="preview-item">
+                      <span className="icon">🎒</span>
+                      <span className="label">Bags</span>
+                    </div>
+                  </div>
+      
+                  {/* Animated connector dots */}
+                  <div className="shop-connector">
+                    <div className="connector-dots">
+                      <div className="connector-dot" />
+                      <div className="connector-dot" />
+                      <div className="connector-dot" />
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </section>
       
     </div>
       <Footer />

@@ -768,3 +768,440 @@
     font-size: 1.25rem;
   }
 }
+
+/* Add this to your home.css file - Home Page Garbage Shop Section */
+
+/* ============================================
+   GARBAGE SHOP SECTION - HOME PAGE
+   ============================================ */
+
+.home-page .garbage-shop-section {
+  position: relative;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, var(--hp-dark) 0%, var(--hp-mid) 50%, var(--hp-primary) 100%);
+  overflow: hidden;
+}
+
+/* Animated background elements */
+.home-page .garbage-shop-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 600px 600px at 10% 20%, rgba(92, 147, 150, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 500px 500px at 90% 80%, rgba(193, 217, 222, 0.1) 0%, transparent 50%);
+  animation: shop-section-glow 8s ease-in-out infinite;
+}
+
+@keyframes shop-section-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* Floating recycled items background */
+.home-page .shop-float-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.home-page .shop-float-item {
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.08;
+  animation: shop-float-rotate 20s linear infinite;
+}
+
+.home-page .shop-float-item:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+.home-page .shop-float-item:nth-child(2) { top: 70%; left: 15%; animation-delay: -5s; }
+.home-page .shop-float-item:nth-child(3) { top: 20%; right: 10%; animation-delay: -10s; }
+.home-page .shop-float-item:nth-child(4) { bottom: 15%; right: 20%; animation-delay: -15s; }
+.home-page .shop-float-item:nth-child(5) { top: 50%; left: 8%; animation-delay: -7s; }
+
+@keyframes shop-float-rotate {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-20px) rotate(5deg); }
+  50% { transform: translateY(0) rotate(0deg); }
+  75% { transform: translateY(20px) rotate(-5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* Main container */
+.home-page .garbage-shop-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Content side */
+.home-page .shop-content {
+  animation: slide-in-left 0.8s ease-out;
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.home-page .shop-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(193, 217, 222, 0.15);
+  border: 1px solid rgba(193, 217, 222, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--hp-accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  animation: badge-pulse-shop 2s ease-in-out infinite;
+}
+
+@keyframes badge-pulse-shop {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(193, 217, 222, 0.2); }
+  50% { box-shadow: 0 0 20px 5px rgba(193, 217, 222, 0.1); }
+}
+
+.home-page .garbage-shop-section h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--hp-white);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.home-page .garbage-shop-section h2 span {
+  background: linear-gradient(135deg, var(--hp-light) 0%, var(--hp-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-page .shop-description {
+  color: var(--hp-accent);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Impact stats preview */
+.home-page .shop-impact-preview {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.home-page .impact-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.home-page .impact-stat:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  border-color: rgba(193, 217, 222, 0.3);
+}
+
+.home-page .impact-icon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--hp-primary) 0%, var(--hp-light) 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 15px rgba(41, 115, 118, 0.3);
+}
+
+.home-page .impact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page .impact-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--hp-white);
+  line-height: 1;
+}
+
+.home-page .impact-label {
+  font-size: 0.75rem;
+  color: var(--hp-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* CTA Button */
+.home-page .shop-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.125rem 2.5rem;
+  background: linear-gradient(135deg, var(--hp-light) 0%, var(--hp-accent) 100%);
+  color: var(--hp-dark);
+  font-weight: 700;
+  font-size: 1.125rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(92, 147, 150, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-page .shop-cta-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transform: translateX(-100%);
+  transition: 0.6s;
+}
+
+.home-page .shop-cta-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(92, 147, 150, 0.5);
+}
+
+.home-page .shop-cta-btn:hover::before {
+  transform: translateX(100%);
+}
+
+.home-page .shop-cta-btn .arrow {
+  transition: transform 0.3s ease;
+}
+
+.home-page .shop-cta-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Visual side - Interactive Card */
+.home-page .shop-visual {
+  position: relative;
+  animation: slide-in-right 0.8s ease-out 0.2s both;
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.home-page .shop-card-large {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 2rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.home-page .shop-card-large:hover {
+  transform: translateY(-10px);
+  border-color: rgba(193, 217, 222, 0.3);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Rotating recycle symbol */
+.home-page .recycle-center {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
+}
+
+.home-page .recycle-symbol-large {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8rem;
+  animation: recycle-spin-slow 15s linear infinite;
+  filter: drop-shadow(0 0 30px rgba(92, 147, 150, 0.5));
+}
+
+@keyframes recycle-spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Orbiting products */
+.home-page .orbit-products {
+  position: absolute;
+  inset: 0;
+  animation: orbit-rotate 20s linear infinite;
+}
+
+@keyframes orbit-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.home-page .orbit-product {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-page .orbit-product:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+.home-page .orbit-product:nth-child(2) { bottom: 15%; right: 0; }
+.home-page .orbit-product:nth-child(3) { bottom: 15%; left: 0; }
+.home-page .orbit-product:nth-child(4) { top: 30%; right: -10px; }
+
+/* Product preview grid */
+.home-page .product-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.home-page .preview-item {
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.home-page .preview-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+  border-color: rgba(193, 217, 222, 0.3);
+}
+
+.home-page .preview-item .icon {
+  font-size: 2rem;
+}
+
+.home-page .preview-item .label {
+  font-size: 0.75rem;
+  color: var(--hp-accent);
+  font-weight: 600;
+}
+
+/* Connection line to shop */
+.home-page .shop-connector {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.home-page .connector-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home-page .connector-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--hp-accent);
+  border-radius: 50%;
+  animation: dot-fade 1.5s ease-in-out infinite;
+}
+
+.home-page .connector-dot:nth-child(2) { animation-delay: 0.2s; }
+.home-page .connector-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes dot-fade {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 968px) {
+  .home-page .garbage-shop-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .home-page .shop-content {
+    order: 2;
+  }
+  
+  .home-page .shop-visual {
+    order: 1;
+  }
+  
+  .home-page .shop-impact-preview {
+    justify-content: center;
+  }
+  
+  .home-page .recycle-center {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .home-page .recycle-symbol-large {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page .garbage-shop-section {
+    padding: 60px 16px;
+  }
+  
+  .home-page .shop-impact-preview {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .home-page .impact-stat {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+  
+  .home-page .product-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .home-page .shop-float-item {
+    font-size: 2.5rem;
+  }
+}
