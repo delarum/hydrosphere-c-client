@@ -1,0 +1,52 @@
+/* client/src/components/DarkModeToggle.css */
+
+.dm-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  outline: none;
+}
+
+.dm-track {
+  display: flex;
+  align-items: center;
+  width: 52px;
+  height: 28px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  padding: 3px;
+  transition: background 0.35s ease, border-color 0.35s ease;
+}
+
+[data-theme="dark"] .dm-track {
+  background: rgba(61, 143, 147, 0.3);
+  border-color: rgba(106, 171, 176, 0.45);
+}
+
+.dm-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #013137;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              background 0.35s ease,
+              color 0.35s ease;
+  transform: translateX(0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+}
+
+.dm-thumb--dark {
+  transform: translateX(24px);
+  background: #112d32;
+  color: #a0c8ce;
+}
