@@ -1,6 +1,8 @@
 // client/src/components/WeatherSection.jsx
 import React, { useState, useEffect, useCallback } from 'react';
-import './styles/weathersection.css';
+import '../styles/weathersection.css';
+import Navbar from '../components/navbar';
+import Footer from '../components/Footer';
 
 const LOCATIONS = [
   { name: 'Westlands',  lat: -1.2667, lon: 36.8000 },
@@ -105,6 +107,8 @@ export default function WeatherSection() {
   const activeMeta = activeData ? getWeatherMeta(activeData.weather_code) : null;
 
   return (
+    <>
+    <Navbar />
     <section className="weather-section">
       <div className="weather-container">
 
@@ -291,5 +295,7 @@ export default function WeatherSection() {
 
       </div>
     </section>
+    <Footer />
+    </>
   );
 }

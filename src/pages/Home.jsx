@@ -20,13 +20,12 @@ function Home() {
         <div className="hero-particles"></div>
         <div className="hero-overlay">
           <div className="hero-content">
-            <span className="hero-badge">🌊 Protecting Africa's Water</span>
-            <h1>HYDROS-C</h1>
+            <h1>Protecting Our Source Of Life</h1>
             <p className="hero-subtitle">
-              Advanced water ecosystem monitoring and restoration platform
+              A community-driven company commited to restoring large water source not only in Africa but through out the world. 
             </p>
             <div className="cta-group">
-              <button className="cta-btn">Get Started</button>
+              <button className="cta-btn">View Live Tracking</button>
               <button className="cta-btn cta-btn-secondary">Learn More</button>
             </div>
           </div>
@@ -41,8 +40,8 @@ function Home() {
       <section className="map-section">
         <div className="map-wrapper">
           <div className="section-header">
-            <h2>Live Monitoring Network</h2>
-            <p>Real-time water quality data from sensors across East Africa</p>
+            <h2>Nairobi River Basin Restoration</h2>
+            <p>Our current project is focused on the regeneration of the Nairobi River Basin and its tributaries. We are deploying all our resourses in partnership with the Nairobi County Government and several NGOs to monitor, treat, restore an put further measures preventing the further degradation of this once glorious river basin.</p>
           </div>
           
           <div className="map-container">
