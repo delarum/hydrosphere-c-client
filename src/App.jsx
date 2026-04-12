@@ -9,6 +9,7 @@ import Register from './pages/Register';
 import BecomeInvolved from './pages/BecomeInvolved';
 import Shop from './pages/Shop';
 import WeatherSection from './pages/Weathersection';
+import Trackers from './pages/Trackers';
 
 import { Routes, Route } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
@@ -30,6 +31,7 @@ function App() {
     <Route path="/PartnerWithUs" element={<PartnerWithUs />} />
     <Route path="/Projects" element={<Projects />} />
     <Route path="/weather" element={<WeatherSection />} />
+    <Route path="/trackers" element={<Trackers />} />
     <Route path="/login" element={<Login />} />
     <Route path="/register" element={<Register />} />
     <Route path="/auth/google/callback" element={<AuthCallback />} />

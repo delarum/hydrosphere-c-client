@@ -9,9 +9,10 @@ import { Link } from "react-router-dom";
 import Shop from "./Shop";
 import { useNavigate } from "react-router-dom";
 
-const navigate = useNavigate();
+
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -30,8 +31,9 @@ function Home() {
                 source not only in Africa but through out the world.
               </p>
               <div className="cta-group">
+        
                 <button
-                  className="hero-btn primary"
+                  className="cta-btn cta-btn-primary"
                   onClick={() => navigate("/trackers")}
                 >
                   VIEW LIVE TRACKING
