@@ -1,28 +1,26 @@
 // client/src/hooks/useDarkMode.js
 import { useState, useEffect } from 'react';
 
-export default function useDarkMode() {
+const STORAGE_KEY = 'hydros-theme';
+
+export function useDarkMode() {
   const [isDark, setIsDark] = useState(() => {
-    const saved = localStorage.getItem('hc-theme');
+    const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) return saved === 'dark';
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
   useEffect(() => {
     const root = document.documentElement;
-    root.setAttribute('data-theme', isDark ? 'dark' : 'light');
-    localStorage.setItem('hc-theme', isDark ? 'dark' : 'light');
+    if (isDark) {
+      root.setAttribute('data-theme', 'dark');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+    localStorage.setItem(STORAGE_KEY, isDark ? 'dark' : 'light');
   }, [isDark]);
 
-  // Follow system preference only if user never manually set a preference
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    const handler = (e) => {
-      if (!localStorage.getItem('hc-theme')) setIsDark(e.matches);
-    };
-    mq.addEventListener('change', handler);
-    return () => mq.removeEventListener('change', handler);
-  }, []);
+  const toggle = () => setIsDark(prev => !prev);
 
-  return [isDark, () => setIsDark(p => !p)];
+  return { isDark, toggle };
 }
