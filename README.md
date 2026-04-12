@@ -1,16 +1,209 @@
-# React + Vite
+#  HYDROSPHERE-C
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+HYDROSPHERE-C is a full-stack web application focused on **sustainable living and environmental impact**. It combines e-commerce with real-world ecological contributions by allowing users to purchase products made from recycled materials while tracking their environmental impact.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Core Idea
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Every purchase made on the platform contributes directly to:
 
-## Expanding the ESLint configuration
+* Large water bodies plastic removal
+* Recycling initiatives
+* Reduction of carbon emissions
+*  Water conservation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The platform transforms **consumer activity into measurable environmental impact**.
+
+---
+
+## Features
+
+### Shop System
+
+* Browse products by category
+* Sort products (price, impact, featured)
+* Add to cart with dynamic quantity updates
+* Checkout system with backend integration
+
+### Impact Tracking
+
+* Real-time environmental impact calculations
+* User-specific impact dashboard
+* Metrics tracked:
+
+  * Plastic removed (kg)
+  * CO₂ prevented (kg)
+  * Water saved (litres)
+  * Items recycled
+
+###Interactive UI
+
+* Purchase celebration animations
+* Floating UI elements and smooth transitions
+* Dynamic counters and visual feedback
+
+### Authentication
+
+* User login & registration
+* Protected checkout
+* Token-based authentication
+
+---
+
+##  Tech Stack
+
+### Frontend
+
+* React (Vite)
+* React Router
+* Axios
+* Pure CSS (custom animations & styling)
+
+### Backend
+
+* Node.js
+* Express.js
+* REST API
+
+### Database
+
+* MongoDB
+
+---
+
+## Project Structure
+
+```
+client/
+ ├── src/
+ │   ├── pages/
+ │   │   ├── Home.jsx
+ │   │   ├── Shop.jsx
+ │   │   ├── About.jsx
+ │   │   └── Contact.jsx
+ │   ├── components/
+ │   ├── context/
+ │   ├── styles/
+ │   └── App.jsx
+
+server/
+ ├── controllers/
+ ├── routes/
+ ├── models/
+ └── server.js
+```
+
+---
+
+## Installation & Setup
+
+### 1.Repository
+
+```
+https://github.com/delarum/hydrosphere-c-client.git
+```
+
+### 2. Install dependencies
+
+#### Client
+
+```
+cd client
+npm install
+npm run dev
+```
+
+#### Server
+
+```
+cd server
+npm install
+npm run dev
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file in the client:
+
+```
+VITE_API_URL=http://localhost:5000/api
+```
+
+And in the server:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+```
+
+---
+
+## API Endpoints
+
+### Products
+
+* `GET /api/shop/products`
+
+### User Impact
+
+* `GET /api/shop/my-impact`
+
+### Orders
+
+* `POST /api/shop/order`
+
+---
+
+## Future Improvements
+
+* Payment gateway integration (Stripe/PayPal)
+* Mobile responsiveness improvements
+* Order tracking system
+* Live global impact dashboard
+*  AI-based product recommendations
+
+---
+
+## Contributing
+
+Contributions are welcome!
+
+1. Fork the project
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Inspiration
+
+HYDROSPHERE-C is inspired by the need to bridge the gap between **technology, sustainability, and everyday consumer behavior**.
+
+---
+
+## Author
+
+Developed with passion for sustainability and innovation by Del Arum.
+
+
+
+---
+
+## Final Note
+
+> "Small actions, when multiplied by millions of people, can transform the world."
+
+Every click, every purchase, every interaction matters. 💚
