@@ -147,7 +147,7 @@ const Shop = () => {
           <div className="shop-hero-content">
             <span className="shop-hero-badge">♻️ Sustainable Shopping</span>
             <h1>Turn Trash Into <span className="highlight">Treasure</span></h1>
-            <p>Every purchase directly funds ocean plastic removal. Shop products made from 100% recycled materials.</p>
+            <p>Every purchase directly funds water plastic removal. Shop products made from 100% recycled materials.</p>
             <div className="hero-impact-counter">
               <div className="counter-item">
                 <span className="counter-number">24,750</span>
@@ -170,7 +170,7 @@ const Shop = () => {
         {/* ── Recycling Process ── */}
         <section className="recycling-process">
           <div className="process-container">
-            <h2>From Ocean Trash to Your Door</h2>
+            <h2>From recycled Trash to Your Door</h2>
             <p className="process-subtitle">See how we transform pollution into premium products</p>
             <div className="process-steps">
               {[
@@ -199,7 +199,7 @@ const Shop = () => {
             <div className="process-impact-banner">
               <div className="impact-icon">🌍</div>
               <div className="impact-text">
-                <strong>Every $10 spent removes 1kg of plastic from the ocean</strong>
+                <strong>Every $10 spent removes 1kg of plastic from the our water bodies</strong>
                 <span>Verified by third-party audit • Real-time tracking</span>
               </div>
             </div>

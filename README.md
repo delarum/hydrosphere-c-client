@@ -160,6 +160,9 @@ JWT_SECRET=your_secret_key
 
 ---
 
+## Screenshot of the page
+![alt text](assets\Screenshot_13-2-2026_182932_127.0.0.1.jpeg)
+
 ## Future Improvements
 
 * Payment gateway integration (Stripe/PayPal)
@@ -193,6 +196,13 @@ This project is licensed under the MIT License.
 HYDROSPHERE-C is inspired by the need to bridge the gap between **technology, sustainability, and everyday consumer behavior**.
 
 ---
+## Known bugs
+None
+
+## Support and Contact Information
+**Email:** delarum7@gmail.com
+
+**Phone Number:** 0792651083
 
 ## Author
 

@@ -11,17 +11,20 @@ import "leaflet/dist/leaflet.css";
 import "leaflet.heat";
 
 const riverPath = [
-  [-1.2921, 36.8219],
-  [-1.2900, 36.8300],
-  [-1.2850, 36.8400],
-  [-1.2800, 36.8500],
-  [-1.2750, 36.8600],
+  [-1.2371, 36.8957], 
+  [-1.2599, 36.8848], 
+  [-1.2711, 36.8073], 
+  [-1.2852, 36.8360], 
+  [-1.2870, 36.8444], 
 ];
 
 const trackers = [
-  { id: 1, position: [-1.2921, 36.8219], status: "High Pollution" },
-  { id: 2, position: [-1.2850, 36.8400], status: "Moderate" },
-  { id: 3, position: [-1.2750, 36.8600], status: "Clean" },
+  { id: 1, position: [-1.2371, 36.8957], status: "TRK01-KASARANI" },
+  { id: 2, position: [-1.2599, 36.8848], status: "TRK02-EMABAKASI" },
+  { id: 3, position: [-1.2711, 36.8073], status: "TRK03-WESTLANDS" },
+  { id: 4, position: [-1.2852, 36.8360], status: "TRK04-STAREHE" },
+  { id: 5, position: [-1.2870, 36.8444], status: "TRK05-KAMKUNJI" },
+
 ];
 
 const heatData = [
@@ -54,7 +57,7 @@ const MapSection = () => {
   return (
     <div className="map-section">
       <MapContainer
-        center={[-1.286389, 36.817223]}
+        center={[-1.263204, 36.861880]}
         zoom={13}
         className="map-container"
         whenCreated={(map) => (window._leaflet_map = map)}

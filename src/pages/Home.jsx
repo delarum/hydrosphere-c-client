@@ -89,7 +89,7 @@ function Home() {
                   <div className="stat-item">
                     <div className="stat-info">
                       <span className="stat-label">Active Sensors</span>
-                      <span className="stat-value">247</span>
+                      <span className="stat-value">5</span>
                     </div>
                     <span className="stat-change">+12%</span>
                   </div>
@@ -129,7 +129,7 @@ function Home() {
             <div className="shop-content">
               <span className="shop-badge">
                 <span>🌊</span>
-                Ocean Plastic Recovery
+                Water Plastic Recovery
               </span>
 
               <h2>
@@ -137,9 +137,9 @@ function Home() {
               </h2>
 
               <p className="shop-description">
-                Shop premium products made from 100% recycled ocean plastic.
+                Shop premium products made from 100% recycled large water bodies' plastic.
                 Every purchase directly funds the removal of plastic waste from
-                Africa's coastlines and supports local recycling communities.
+                Africa's riverbedsand lakesides and supports local recycling communities.
               </p>
 
               {/* Impact Stats */}
