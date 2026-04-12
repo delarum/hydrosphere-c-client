@@ -4,6 +4,7 @@ import waveLogo from '../assets/waveLogo.png';
 import '../styles/navbar.css';
 import { useAuth } from '../context/AuthContext';
 import UserProfileHeader from './UserProfileHeader';
+import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,8 +65,8 @@ const Navbar = () => {
               Become Involved
             </Link>
           </li>
-        </ul>
-
+          </ul>
+        <DarkModeToggle />
         {/* Hamburger Button */}
         <button 
           className={`hamburger ${isOpen ? 'hamburger-active' : ''}`}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/partner.css';
+import Navbar from '../components/navbar';
 
 const PartnerWithUs = () => {
   const [formData, setFormData] = useState({
@@ -131,6 +132,8 @@ const PartnerWithUs = () => {
   ];
 
   return (
+    <>
+    <Navbar />
     <div className="partner-page">
       {/* Hero Section */}
       <section id="partner-hero" className="partner-hero">
@@ -539,6 +542,7 @@ const PartnerWithUs = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
