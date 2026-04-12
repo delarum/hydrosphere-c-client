@@ -152,7 +152,7 @@ function Home() {
                   </div>
                 </div>
       
-                <Link to="/shop" className="shop-cta-btn">
+                <Link to="/Shop" className="shop-cta-btn">
                   Explore EcoShop
                   <span className="arrow">→</span>
                 </Link>
