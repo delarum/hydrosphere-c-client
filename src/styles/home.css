@@ -1156,3 +1156,99 @@
   .home-page .dashboard-header h3 { font-size: 1rem; }
   .home-page .stat-value { font-size: 1.1rem; }
 }
+
+/* ============================================
+   HOME PAGE — SVG ICON STYLES
+   Append to the bottom of home.css
+   ============================================ */
+
+/* Float background icons — large decorative */
+.home-page .shop-float-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+.home-page .shop-float-item svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--hp-accent);
+}
+
+/* Impact stat icons */
+.home-page .impact-icon svg {
+  stroke: var(--hp-white);
+}
+
+/* Dashboard chart icon */
+.home-page .dashboard-icon svg {
+  stroke: var(--hp-white);
+}
+
+/* Feature card icon */
+.home-page .feature-icon svg {
+  stroke: var(--hp-primary);
+}
+
+/* Shop badge icon */
+.home-page .shop-badge svg {
+  stroke: var(--hp-accent);
+  flex-shrink: 0;
+}
+
+/* CTA arrow icon */
+.home-page .shop-cta-btn .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .shop-cta-btn .arrow svg {
+  stroke: var(--hp-dark);
+  transition: transform 0.3s ease;
+}
+
+.home-page .shop-cta-btn:hover .arrow svg {
+  transform: translateX(5px);
+}
+
+/* Orbit product icons */
+.home-page .orbit-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .orbit-product svg {
+  stroke: var(--hp-accent);
+}
+
+/* Recycle centre large icon */
+.home-page .recycle-symbol-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .recycle-symbol-large svg {
+  stroke: var(--hp-accent);
+  filter: drop-shadow(0 0 30px rgba(92, 147, 150, 0.5));
+}
+
+/* Product preview grid icons */
+.home-page .preview-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .preview-item .icon svg {
+  stroke: var(--hp-accent);
+}
+
+/* Dark mode overrides */
+[data-theme="dark"] .home-page .feature-icon svg {
+  stroke: #5c9396;
+}
