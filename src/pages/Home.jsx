@@ -38,7 +38,8 @@ function Home() {
                 >
                   VIEW LIVE TRACKING
                 </button>
-                <button className="cta-btn cta-btn-secondary">
+                <button className="cta-btn cta-btn-secondary"
+                onClick={() => navigate("/about")}>
                   Learn More
                 </button>
               </div>
