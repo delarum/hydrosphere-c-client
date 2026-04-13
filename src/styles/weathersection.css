@@ -1,4 +1,4 @@
-/* client/src/components/WeatherSection.css */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ============================================
    VARIABLES
@@ -12,6 +12,8 @@
   --ws-white:   #ffffff;
   --ws-bg:      #f0f7f8;
   --ws-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: "Inter", sans-serif;
 }
 
 /* ============================================

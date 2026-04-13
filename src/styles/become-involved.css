@@ -1,4 +1,4 @@
-/* client/src/styles/become-involved.css */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* CSS Variables */
 :root {
@@ -29,6 +29,8 @@
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
+
+  font-family: "Inter", sans-serif;
 }
 
 /* Page Layout */
