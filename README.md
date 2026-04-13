@@ -320,7 +320,7 @@ http://localhost:5000/api
 
 ---
 
-### 🔐 Auth Routes — `/api/auth`
+### Auth Routes — `/api/auth`
 
 | Method | Endpoint | Auth | Description |
 |--------|----------|------|-------------|
@@ -369,7 +369,7 @@ http://localhost:5000/api
 
 ---
 
-### 🛒 Shop Routes — `/api/shop`
+### Shop Routes — `/api/shop`
 
 | Method | Endpoint | Auth | Description |
 |--------|----------|------|-------------|
