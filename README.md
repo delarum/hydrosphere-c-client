@@ -2,7 +2,7 @@
 
 > *"Small actions, when multiplied by millions of people, can transform the world."*
 
-A full-stack environmental impact platform that turns consumer purchases into measurable ocean cleanup. Every product sold funds plastic removal from East Africa's coastlines.
+A full-stack environmental impact platform that turns consumer purchases into measurable large water bodies cleanup and tracks water pollution administering treatment. Every product sold funds plastic removal from East Africa's coastlines, riverbasins and lakebeds.
 
 ---
 
